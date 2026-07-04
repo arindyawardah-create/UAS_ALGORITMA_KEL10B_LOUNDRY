@@ -1,6 +1,8 @@
 from laundry import Laundry
 from queue import Queue
+from bst import BST
 
+data_laundry = BST()
 antrian = Queue()
 
 while True:
