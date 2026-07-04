@@ -7,10 +7,10 @@ class Laundry:
         self.berat = berat
 
         if layanan.lower() == "express":
-            self.harga_perkg = 10000
+            self.harga_perkg = 10.000
             self.prioritas = 1
         else:
-            self.harga_perkg = 7000
+            self.harga_perkg = 7.000
             self.prioritas = 2
 
         self.total_harga = self.berat * self.harga_perkg
@@ -23,6 +23,6 @@ class Laundry:
             f"No. HP  : {self.noHp}\n"
             f"Layanan : {self.layanan}\n"
             f"Berat   : {self.berat} kg\n"
-            f"Total   : Rp{self.total_harga:,}\n"
+            f"Total   : Rp{self.total_harga:,.3f}".replace(",", ".") + "\n"
             f"Status  : {self.status}"
         )
