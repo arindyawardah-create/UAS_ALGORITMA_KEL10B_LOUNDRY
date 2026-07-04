@@ -33,8 +33,10 @@ while True:
         data = antrian.dequeue()
 
         if data:
-            print("\nLaundry yang diproses:")
-            print(data)
+            data.status = "Diproses"
+            data_laundry.insert(data)
+
+            print("\nLaundry berhasil diproses dan disimpan ke BST.")
 
     elif pilihan == "0":
         print("\nTerima kasih telah menggunakan sistem laundry.")
