@@ -9,10 +9,10 @@ class BST:
         self.root = None
     
     def insert(self, data):
-    if self.root is None:
-        self.root = BSTNode(data)
-    else:
-        self._insert(self.root, data)
+        if self.root is None:
+            self.root = BSTNode(data)
+        else:
+            self._insert(self.root, data)
 
     def _insert(self, current, data):
         if data.kode < current.data.kode:
@@ -50,3 +50,12 @@ class BST:
             print(current.data)
             print("-" * 35)
             self._inorder(current.right)
+
+    def _height(self, current):
+        if current is None:
+            return 0
+
+        return 1 + max(
+            self._height(current.left),
+            self._height(current.right)
+        )

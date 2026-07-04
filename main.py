@@ -12,6 +12,7 @@ while True:
     print("1. Tambah Laundry")
     print("2. Lihat Antrean")
     print("3. Proses Antrean")
+    print("4. Lihat Data Laundry (BST)")
     print("0. Keluar")
 
     pilihan = input("Pilih menu: ")
@@ -37,6 +38,9 @@ while True:
             data_laundry.insert(data)
 
             print("\nLaundry berhasil diproses dan disimpan ke BST.")
+
+    elif pilihan == "4":
+        data_laundry.inorder()
 
     elif pilihan == "0":
         print("\nTerima kasih telah menggunakan sistem laundry.")
