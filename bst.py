@@ -83,9 +83,7 @@ class BST:
 
         return current
 
-    # =========================
     # INORDER
-    # =========================
     def inorder(self):
         if self.root is None:
             print("\nData laundry kosong.")
@@ -113,9 +111,7 @@ class BST:
             self._preorder(current.left)
             self._preorder(current.right)
 
-    # =========================
     # POSTORDER
-    # =========================
     def postorder(self):
         if self.root is None:
             print("\nData laundry kosong.")
