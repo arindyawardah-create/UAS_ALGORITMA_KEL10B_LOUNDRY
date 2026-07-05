@@ -83,9 +83,7 @@ class BST:
 
         return current
 
-    # =========================
     # INORDER
-    # =========================
     def inorder(self):
         if self.root is None:
             print("\nData laundry kosong.")
