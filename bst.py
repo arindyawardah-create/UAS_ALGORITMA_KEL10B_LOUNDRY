@@ -48,9 +48,7 @@ class BST:
         else:
             return self._search(current.right, kode)
 
-    # =========================
     # DELETE
-    # =========================
     def delete(self, kode):
         self.root = self._delete(self.root, kode)
 
