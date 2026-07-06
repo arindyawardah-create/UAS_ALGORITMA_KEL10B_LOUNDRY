@@ -1,4 +1,3 @@
-#stack
 class StackNode:
     def __init__(self, data):
         self.data = data
